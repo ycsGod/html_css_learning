@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-css的id和类选择器</title>
+    <style>
+        #id1{
+            color: red;
+        }
+        .c1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<!--
+1. 什么是id选择器？ #id
+根据指定的id名称找到对应的标签。
+
+格式：
+#名称{
+    属性：　属性值；
+}
+
+注意点：　
+    （１）同一个页面中，id不能够重复
+    （２）在企业开发中如果仅仅为了设置样式，我们不会使用id，因为在前端开发中的id是留给js使用的
+
+2.　什么时类选择器? .class
+根据指定的class名称找到对应的一类标签
+
+格式:
+.名称{
+    属性：　属性值；
+}
+
+注意点：
+    （１）不同标签class名称可以重复
+    （２）同一标签可以有多个class名称
+-->
+<p id="id1">我是段落</p>
+<p class="c1">我是段落</p>
+<p class="c1">我是段落</p>
+</body>
+</html>

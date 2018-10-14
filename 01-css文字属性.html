@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-css文字属性</title>
+    <style>
+        p{
+            /*font-style: italic;*/
+            /*font-style: normal;*/
+            /*font-weight: bold;*/
+            /*font-weight: bolder;*/
+            /*font-weight: lighter;*/
+            /*font-size: 300px;*/
+            /*font-family: "乱七八糟的字体", "宋体";*/
+            /*font-family: "Tibetan Machine Uni", "微软雅黑";*/
+            font: italic bold 300px “微软雅黑”;
+        }
+    </style>
+</head>
+<body>
+<!--
+1. 规定文字样式的属性
+格式: font-style: italic;
+取值：
+    normal: 正常的（默认）
+    italic: 倾斜的
+
+2. 规定文字粗细的属性
+格式: font-weight: bold;
+取值：
+    bold: 加粗
+    bolder：　比加粗还要粗
+    lighter: 细线（默认）
+    100-900之间整百的数字
+
+3. 规定文字大小的属性
+格式: font-size: 30px;
+单位: px　像素(pixel)
+注意点：　通过font-size设置文字大小一定要带单位
+
+4. 规定文字字体的属性
+格式：　font-family: "宋体";
+注意点：　如果值是汉字，需要用单引号或者双引号括起来
+补充：
+    (1)如果设置的字体不存在，那么系统会使用默认的字体（宋体）
+    (2)如果设置的字体不存在，而我们又不想使用默认的字体怎么办？
+        可以给字体设置备选方案：
+        font-family: "乱七八糟的字体", "宋体",...;
+    (3)如果想给中文和英文单独设置字体怎么办？
+        但凡是中文字体，里面都包含了英文
+        但凡是英文字体，里面都没有包含中文
+        也就是说中文字体可以处理英文，但是英文字体不可以处理中文
+
+5. 文字属性的缩写
+缩写格式: font: italic(font-style) bold(font-weight) 10px(font-size) "微软雅黑"(font-family);
+注意点：
+    （１）在这种缩写格式中有的属性可以省略
+        font-style, font-weight可以省略
+    （２）在这种缩写格式中font-style和font-weight位置可以交换
+    （３）在这种缩写格式中有的属性不可以省略
+        font-size, font-family不可以省略
+    （４）在这种缩写格式中font-size和font-family位置不可以随便放
+        font-size一定要放在font-family前面，并且font-size和font-family要放在所有属性的最后。
+-->
+</body>
+<p>abc我是段落</p>
+</html>
