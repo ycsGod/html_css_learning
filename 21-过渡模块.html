@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21-过渡模块</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            transition-property: width, background-color;
+            /*过渡效果执行的时长*/
+            transition-duration: 2s;
+            /*过渡效果执行的速度*/
+            transition-timing-function: ease;
+            /*过渡效果延迟2s后执行*/
+            transition-delay: 1s;
+
+            /*简写形式*/
+            /*transition: width 2s ease 0s, background-color 2s ease 0s;*/
+            /*transition: all 5s;*/
+        }
+        .box1:hover{
+            width: 300px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

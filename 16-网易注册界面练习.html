@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16-网易注册界面练习</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            width: 960px;
+            height: 80px;
+            /*background-color: red;*/
+            margin: 0 auto;
+            padding-top: 28px;
+            box-sizing: border-box;
+        }
+        .header .logo{
+            width: 644px;
+            height: 27px;
+            background: url("imags/netease_logup.png") no-repeat 0 0;
+            float: left;
+        }
+        .header .logo a{
+            width: 130px;
+            height: 27px;
+            /*background-color: purple;*/
+            display: inline-block;
+        }
+
+        .header .header_right{
+            width: 200px;
+            height: 27px;
+            float: right;
+            /*background-color: purple;*/
+            text-align: right;
+            color: #cccccc;
+        }
+        .header .header_right a{
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 27px;
+            color: #cccccc;
+            /*background-color: yellow;*/
+        }
+        .content{
+            width: 960px;
+            height: 600px;
+            /*background-color: green;*/
+            margin: 0 auto;
+        }
+        .content .top{
+            width: 960px;
+            height: 38px;
+            /*background-color: purple;*/
+            background: url("imags/content_top_bc.PNG") 0 0;
+        }
+        .content .top h1{
+            color: white;
+            font-size: 12px;
+            line-height: 38px;
+            text-indent: 2em;
+        }
+        .content .bottom{
+            width: 960px;
+            height: 562px;
+            /*background-color: blue;*/
+        }
+        .content .bottom .article{
+            width: 642px;
+            height: 562px;
+            float: left;
+            background-color: red;
+            padding-top: 50px;
+            padding-left: 80px;
+            box-sizing: border-box;
+        }
+        .content .bottom .article .article_top{
+            width: 560px;
+            height: 60px;
+            /*background-color: purple;*/
+        }
+        .content .bottom .article .article_top ul{
+            list-style: none;
+            width: 412px;
+            height: 34px;
+            background: url("imags/tab.jpg") no-repeat 0 0;
+        }
+        .content .bottom .article .article_top ul li{
+            float: left;
+            width: 137px;
+            height: 34px;
+            font-size: 12px;
+            /*background-color: skyblue;*/
+            line-height: 34px;
+            text-align: center;
+        }
+        .content .bottom .article .article_bottom{
+            width: 560px;
+            height: 373px;
+            background-color: pink;
+        }
+        .content .bottom .article .article_bottom .line{
+            width: 413px;
+            height: 28px;
+            background-color: orange;
+        }
+        .content .bottom .article .article_bottom .line span{
+            width: 60px;
+            height: 28px;
+            float: left;
+            font-size: 12px;
+            line-height: 28px;
+            background-color: purple;
+            text-align: right;
+        }
+        .content .bottom .article .article_bottom .line span .star{
+            color: red;
+            width: 0px;
+        }
+        .content .bottom .article .article_bottom .line div{
+            width: 333px;
+            height: 28px;
+            float: right;
+            background-color: green;
+        }
+        .content .bottom .aside{
+            width: 318px;
+            height: 562px;
+            float: right;
+            /*background-color: green;*/
+            /*background: url("imags/aside.gif") no-repeat 0 0;*/
+            padding-top: 105px;
+            padding-left: 66px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .footer{
+            width: 960px;
+            height: 48px;
+            background-color: blue;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <a href="#" title="网易163免费邮"></a><a href="#" title="网易126免费邮"></a><a href="#" title="网易Yeah.net免费邮"></a>
+    </div>
+    <div class="header_right">
+        <a href="#">了解更多</a>
+        |
+        <a href="#">反馈意见</a>
+    </div>
+</div>
+<div class="content">
+    <div class="top"><h1>欢迎注册无限容量的网易邮箱！邮件地址可以登录使用其他网易旗下产品。</h1></div>
+    <div class="bottom">
+        <div class="article">
+            <div class="article_top">
+                <ul>
+                    <li>注册字母邮箱</li>
+                    <li>注册手机号码邮箱</li>
+                    <li>注册VIP邮箱</li>
+                </ul>
+            </div>
+            <div class="article_bottom">
+                <div class="line">
+                    <span><span class="star">*</span>邮件地址</span>
+                    <div>
+                        <input type="text" value="建议使用手机号码注册">
+                        @
+                        <select>
+                            <option value="">163.com</option>
+                            <option value="">126.com</option>
+                            <option value="">lnj.net</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside">
+            <img src="imags/aside.gif" alt="">
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>
