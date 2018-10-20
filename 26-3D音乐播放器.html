@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>26-3D音乐播放器</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url("imags/bg.jpg") no-repeat 0 0;
+            background-size: cover;
+            overflow: hidden;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            /*background-color: red;*/
+            margin: 200px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: sport 10s linear 0s infinite normal;
+        }
+        ul:hover{
+            animation-play-state: paused;
+        }
+        @keyframes sport {
+            from{
+                /*
+                1. 动画中如果有和默认样式中同名的属性，会覆盖默认样式中的属性。
+                2. 在编写动画的时候，固定不变的值写在前面，需要变化的写在后面。
+                */
+                transform: rotateX(-10deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(-10deg) rotateY(360deg);
+            }
+        }
+        ul li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            font-size: 40px;
+            text-align: center;
+            line-height: 200px;
+            background-color: black;
+        }
+        ul:hover li img{
+            opacity: 0.5;
+        }
+        ul li:hover img{
+            opacity: 1;
+        }
+        ul li:nth-child(1){
+            /*background-color: green;*/
+            /*要使此效果呈现3D显示，要给其父元素指定transform-style: preserve-3d*/
+            transform: rotateY(60deg) translateZ(200px);
+        }
+        ul li:nth-child(2){
+            /*background-color: blue;*/
+            transform: rotateY(120deg) translateZ(200px);
+        }
+        ul li:nth-child(3){
+            /*background-color: pink;*/
+            transform: rotateY(180deg) translateZ(200px);
+        }
+        ul li:nth-child(4){
+            /*background-color: skyblue;*/
+            transform: rotateY(240deg) translateZ(200px);
+        }
+        ul li:nth-child(5){
+            /*background-color: orange;*/
+            transform: rotateY(300deg) translateZ(200px);
+        }
+        ul li:nth-child(6){
+            /*background-color: purple;*/
+            transform: rotateY(360deg) translateZ(200px);
+        }
+        ul li img{
+            width: 200px;
+            height: 200px;
+            border: 5px solid skyblue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="imags/liudehua2.jpg" alt=""></li>
+    <li><img src="imags/liudehua3.jpg" alt=""></li>
+    <li><img src="imags/liudehua4.jpg" alt=""></li>
+    <li><img src="imags/liudehua5.jpg" alt=""></li>
+    <li><img src="imags/liudehua6.jpg" alt=""></li>
+    <li><img src="imags/liudehua7.jpg" alt=""></li>
+    <audio src="imags/music.mp3" autoplay="autoplay" loop="loop"></audio>
+</ul>
+</body>
+</html>

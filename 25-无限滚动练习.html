@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>25-无限滚动</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 400px;
+            height: 200px;
+            background-color: black;
+            margin: 100px auto 0;
+            overflow: hidden;
+            border: 2px solid skyblue;
+            /*为了添加边框之后，div的大小不发生变化，使用box-sizing: border-box*/
+            box-sizing: border-box;
+        }
+        div ul{
+            width: 2000px;
+            height: 200px;
+            animation: sport 8s linear 0s infinite normal;
+        }
+        @keyframes sport {
+            from{
+                transform: translate(0px);
+            }
+            to{
+                transform: translate(-800px);
+            }
+        }
+        div ul:hover{
+            animation-play-state: paused;
+        }
+        div ul li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            float: left;
+            transition: transform 1s;
+        }
+        div ul:hover li{
+            opacity: 0.5;
+        }
+        div ul li:hover{
+            opacity: 1;
+            transform: scale(1.2, 1.2);
+        }
+
+        div ul li img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li><img src="imags/fbb.jpeg" alt=""></li>
+        <li><img src="imags/zly.jpg" alt=""></li>
+        <li><img src="imags/zta.jpg" alt=""></li>
+        <li><img src="imags/wo.jpg" alt=""></li>
+        <li><img src="imags/fbb.jpeg" alt=""></li>
+        <li><img src="imags/zly.jpg" alt=""></li>
+    </ul>
+</div>
+</body>
+</html>
